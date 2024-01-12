@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Oefenen met ajax</h1>
+        <h2>Pokemon app</h2>
+    </div>
+    <main>
+        <div class="container">
+            <div class="pokemon">
+                <div class="pokemon-view">
+                    <img id="pokemon-image" class="pokemon-image">
+                </div>
+                <div class="pokemon-options">
+                    <select name="imageSelect" id="imageSelect">
+                        <option value="front_default">Front</option>
+                        <option value="back_default">Back</option>
+                        <option value="front_shiny">Front Shiny</option>
+                        <option value="back_shiny">Back Shiny</option>
+                    </select>
+                </div>
+                <div class="pokemon-info" id="pokemon-info">
+                    <h3 id="pokemon-title"></h3>
+                    <p>Gewicht: <span id="pokemon-weight"></span></p> 
+                    <p>Types: <span id="pokemon-types"></span></p> 
+                    <ul class="pokemon-stats" id="pokemon-stats">            
+                    </ul>
+                </div>
+                <div class="pokemon-gif" id="pokmeon-gif1">
+                    <img id="pokemon-gif">
+                </div>
+            </div>
+            <form id="pokemonForm">
+                <label for="pokemonName">Enter Pokemon Name:</label>
+                <input type="text" placeholder="Pokemon" id="pokemonName" name="pokemonName" required>
+                <button type="submit">Get Pokemon</button>
+            </form>
+        </div>     
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
